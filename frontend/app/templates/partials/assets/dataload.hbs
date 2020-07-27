@@ -1,0 +1,11 @@
+<!-- scrips da aplicacao -->
+<script type="text/javascript">
+$(document).ready(function($) {
+  {{#if file}}
+  Helper.loadjs('{{baseUrl}}/js/{{file}}{{ext}}.js');
+  {{else}}
+  Helper.loadjs('{{baseUrl}}/js/main-teste{{ext}}.js');
+  {{/if}}
+});
+</script>
+<!-- // scrips da aplicacao -->

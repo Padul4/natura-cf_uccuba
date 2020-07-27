@@ -1,0 +1,175 @@
+/*TEXTOS DO HEADER*/
+.sprite.draghandle::before{
+	color: #FFF;
+	left: -119px;
+	width: 120px;
+	content: "ARRASTE"
+}
+.sprite.draghandle::after{
+	color: #f04d38;
+	right: -164px;
+	width: 158px;
+	content: "E DESCUBRA";
+}
+.sprite.draghandle::before, .sprite.draghandle::after{
+	display: block;
+	position: absolute;
+	top: 20px;
+	font-family: 'gill_sans_bold', arial, sans-serif;
+	font-size: 23px;
+	line-height: 1;
+	text-indent: 0;
+	height: 33px;
+}
+.draghandle.hide-text::before, .draghandle.hide-text::after{
+	display: none !important;
+}
+div.drag div.draghandle{
+	overflow: visible;
+}
+div.before h2, div.after h2{
+	position: absolute;
+	top: 233px;
+	left: 269px;
+	font-size: 35px;
+	font-family: 'gill_sans_std_bold', arial, sans-serif;
+	height: 40px;
+	color: #FFF;
+	width: 500px;
+	z-index: 2;
+}
+div.before h3 .strong, div.after h3 .strong{
+	font-family: 'gill_sans_bold', arial, sans-serif;
+	letter-spacing: -1px;
+	word-spacing: 0px;
+}
+div.before h3, div.after h3{
+	font-family: 'gill_sans_light', arial, sans-serif;
+	position: absolute;
+	width: 860px;
+	height: 35px;
+	color: #FFF;
+	top: 276px;
+	left: 95px;
+	font-size: 25px;
+	z-index: 2;
+	br{
+		display: none;
+	}
+}
+
+div.before h2.right-h, div.after h2.right-h{
+	color: #f04d38;
+}
+div.before h3.right-h, div.after h3.right-h{
+	color: #f04d38;
+}
+/* FIM TEXTOS DO HEADER*/
+
+@media (max-width: @tabletSizePort) {
+	/*TEXTOS DO HEADER*/
+	.sprite.draghandle::before{
+	}
+	.sprite.draghandle::after{
+	}
+	.sprite.draghandle::before, .sprite.draghandle::after{
+	}
+	.draghandle.hide-text::before, .draghandle.hide-text::after{
+	}
+	div.drag div.draghandle{
+	}
+	div.before h2, div.after h2{
+		top: 80px;
+		left: 148px;
+		/*width: inherit;*/
+	}
+	div.before h3 .strong, div.after h3 .strong{
+	}
+	div.before h3, div.after h3{
+		top: 150px;
+		text-align: center;
+		left: 81px;
+		width: 610px;
+		/*width: inherit;*/
+		.br-span{
+			display: none;
+		}
+	}
+
+	div.before h2.right-h, div.after h2.right-h{
+	}
+	div.before h3.right-h, div.after h3.right-h{
+	}
+}
+
+@media (max-width: (@mbSizePort + 60)) {
+	/*TEXTOS DO HEADER*/
+	.sprite.draghandle::before{
+	}
+	.sprite.draghandle::after{
+	}
+	.sprite.draghandle::before, .sprite.draghandle::after{
+	}
+	.draghandle.hide-text::before, .draghandle.hide-text::after{
+	}
+	div.drag div.draghandle{
+	}
+	div.before h2, div.after h2{
+    top: 33px;
+    left: 27px;
+    font-size: 25px;
+	}
+	div.before h3 .strong, div.after h3 .strong{
+	}
+	div.before h3, div.after h3{
+		top: 79px;
+		left: -117px;
+		font-size: 17px;
+		line-height: 18px;
+	/*	top: 79px;
+		left: 0;
+		font-size: 15px;
+		text-align: center;
+		width: inherit;
+		height: auto;*/
+		.br-span{
+			display: block;
+		}
+	}
+
+	div.before h2.right-h, div.after h2.right-h{
+	}
+	div.before h3.right-h, div.after h3.right-h{
+	}
+}
+@media (max-width: @mbSizePort) {
+	/*TEXTOS DO HEADER*/
+	.sprite.draghandle::before{
+		left:-96px;
+	}
+	.sprite.draghandle::after{
+	}
+	.sprite.draghandle::before, .sprite.draghandle::after{
+		font-size: 20px;
+	}
+	.draghandle.hide-text::before, .draghandle.hide-text::after{
+	}
+	div.drag div.draghandle{
+	}
+	div.before h2, div.after h2{
+		font-size: 21px;
+	}
+	div.before h3 .strong, div.after h3 .strong{
+	}
+	div.before h3, div.after h3{
+		left: -143px;
+		font-size: 16px;
+		.br-span{
+		}
+	}
+
+	div.before h2.right-h, div.after h2.right-h{
+	}
+	div.before h3.right-h, div.after h3.right-h{
+	}
+}

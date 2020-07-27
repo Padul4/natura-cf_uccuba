@@ -1,0 +1,99 @@
+#footer-mb {
+  padding-top: 40px;
+  /*background: @color1;*/
+  display: none;
+  .box-social {
+    padding: 24px 0 17px;
+    .bs-label {
+      text-align: center;
+      /*color: @color2;*/
+      font-family: @mainFontBold;
+      padding: 0 5px 10px;
+      display: none;
+    }
+    .bs-wrap-link {
+      text-align: center;
+      .bs-link {
+        display: inline-block;
+        text-indent: -999999px;
+        margin: 0 10px;
+        &.footer-icon-fb{
+          background: url("@{imgPath}/footer-icons/footer-icon-fb.png") no-repeat center top;
+          height: 81px;
+          width: 81px;
+        }
+        &.footer-icon-tw{
+          background: url("@{imgPath}/footer-icons/footer-icon-tw.png") no-repeat center top;
+          height: 81px;
+          width: 81px;
+        }
+        &.footer-icon-yt{
+          background: url("@{imgPath}/footer-icons/footer-icon-yt.png") no-repeat center top;
+          height: 81px;
+          width: 81px;
+        }
+        &.footer-icon-pt{
+          background: url("@{imgPath}/footer-icons/footer-icon-pt.png") no-repeat center top;
+          height: 81px;
+          width: 81px;
+        }
+      }
+    }
+  }
+  .copy-holder{
+    background-color: #f04d38;
+    .copy {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: @mainFontLight;
+      color: #ffffff;
+      padding: 20px 0;
+      font-size: 12px;
+    }
+  }
+}
+
+@media(max-width: @tabletSizeLand) {
+  #footer-mb {
+    display: block;
+  }
+}
+
+@media (max-width: ((@mbSizePort) + 60)) {
+  #footer-mb {
+    .box-social {
+      .bs-label {
+      }
+      .bs-wrap-link {
+        .bs-link {
+          margin: 0 2px;
+          &.footer-icon-fb{
+            background-size: 50px;
+            height: 51px;
+            width: 51px;
+          }
+          &.footer-icon-tw{
+            background-size: 50px;
+            height: 51px;
+            width: 51px;
+          }
+          &.footer-icon-yt{
+            background-size: 50px;
+            height: 51px;
+            width: 51px;
+          }
+          &.footer-icon-pt{
+            background-size: 50px;
+            height: 51px;
+            width: 51px;
+          }
+        }
+      }
+    }
+    .copy-holder{
+      .copy {
+      }
+    }
+  }
+}

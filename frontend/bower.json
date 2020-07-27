@@ -1,0 +1,24 @@
+{
+  "name": "Piema Core",
+  "version": "1.0",
+  "description": "Sistema para gerenciamento do projeto",
+  "authors": [
+    "Lucas Padula"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.2",
+    "greensock": "~1.16.1",
+    "TinyScrollbar": "~2.4.2"
+  }
+}

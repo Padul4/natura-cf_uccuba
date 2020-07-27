@@ -1,0 +1,96 @@
+<script src="{{baseUrl}}/js/contentflow.js"></script>
+
+<div class="wrapper-ucuuba"> 
+  {{> modules/header-mb}}
+	<div id="content">
+  {{> contents/index/header}}
+		<div id="main">
+			<div class="intro-ucuuba">
+				{{> contents/index/slider-footer}}
+				{{> contents/index/novos-sabonetes}}
+				{{> contents/index/main-video}}
+				{{> contents/index/depoimento}}
+			</div>
+			{{> contents/index/banner-share}}
+			{{> contents/index/manteiga-amazonia}}
+			{{> contents/index/curiosidades-ucuuba}}
+			{{> contents/index/carrossel-ekos-ativos}}
+		</div>
+	{{> contents/index/modal-facebook}}	
+	</div>
+  {{> modules/footer-mb}}
+</div>
+
+<script type="text/javascript">
+
+// window.home_page_ucuuba    = true;
+// window.cadatro_page_ucuuba = false;
+// function loadjscssfile(filename, filetype){
+//     if (filetype=="js"){ //if filename is a external JavaScript file
+//         var fileref=document.createElement('script');
+//         fileref.setAttribute("type","text/javascript");
+//         fileref.setAttribute("src", filename);
+//     }
+
+//     if (typeof fileref!="undefined")
+//         document.getElementsByTagName("head")[0].appendChild(fileref);
+// };
+// $(document).ready(function($) {
+// 	loadjscssfile('{{baseUrl}}/js/ucuuba{{ext}}.js?v2', 'js');
+// });
+
+
+// 	window.fbAsyncInit = function() {
+//         FB.init({
+//             appId      : {{facebookId}},
+//             xfbml      : true,
+//             version    : 'v2.3'
+//         });
+//     };
+
+//     (function(d, s, id){
+//         var js, fjs = d.getElementsByTagName(s)[0];
+//         if (d.getElementById(id)) {return;}
+//         js = d.createElement(s); js.id = id;
+//         js.src = "//connect.facebook.net/en_US/sdk.js";
+//         fjs.parentNode.insertBefore(js, fjs);
+//     }(document, 'script', 'facebook-jssdk'));
+
+
+
+//     function shareVideoFb(){
+//         FB.ui({
+//             method: 'feed',
+//             link: 'https://www.youtube.com/watch?v=lsxSmi9E4DM',
+//             name: 'EKOS UCUUBA',
+//             description : 'Difícil encontrar hidratação intensa sem aquela sensação pesada na pele? Chame o poder que vem da natureza.',
+//             picture : __BACKEND__ + 'app/webroot/img/share_video_ucuuba.jpg'
+//         }, function(response){
+//             if( response && response['post_id'] ){
+//                 $('#modal-facebook-success').modal();
+//                 track.sendEvent('ekos', 'filme_natura-ekos-ucuuba', 'FB-compartilhe-sucesso');
+//             }else{
+//                 track.sendEvent('ekos', 'filme_natura-ekos-ucuuba', 'FB-compartilhe-erro');
+//             }
+//         });
+//     }
+
+//     function shareSiteFb(){
+//         FB.ui({
+//             method: 'feed',
+//             link: 'http://www.natura.com.br/www/nossas-marcas/ekos/',
+//             name: 'Natura EKOS UCUUBA',
+//             caption: 'www.natura.com.br/ucuuba',
+//             description : 'Natura EKOS apresenta a linha Ucuuba. A semente de uma árvore rara que proporciona uma rara hidratação. Chame Natura e compartilhe.',
+//             picture : __BACKEND__ + 'app/webroot/img/share_site.jpg'
+//         }, function(response){
+//             if( response && response['post_id'] ){
+//                 $('#modal-facebook-success').modal();
+//                 track.sendEvent('ekos', 'facebook-pagina', 'compartilhe-sucesso');
+//             }else{
+//                 track.sendEvent('ekos', 'facebook-pagina', 'compartilhe-erro');
+//             }
+//         });
+//     }
+</script>
+

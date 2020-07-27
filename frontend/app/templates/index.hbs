@@ -1,0 +1,20 @@
+{{#if hasHeader}}
+	{{> fixed/head}}
+	{{> fixed/header}}
+{{/if}}
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{{baseUrl}}/js/contentflow.js"></script>
+<script src="{{baseUrl}}/js/vendor.js"></script>
+
+<link rel="stylesheet" href="{{baseUrl}}/css/index.css">
+
+{{> contents/index/index}}
+
+{{> assets/configs}}
+
+{{> assets/dataload}}
+
+{{#if hasHeader}}
+	{{> fixed/footer}}
+	{{> fixed/foot}}
+{{/if}}

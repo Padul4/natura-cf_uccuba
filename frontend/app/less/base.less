@@ -1,0 +1,48 @@
+@import "./assets/commons";
+
+.wrapper-ucuuba {
+	background-color: #fff0d6;
+	font-family: 'gill_sans', arial, sans-serif;
+	-webkit-font-smoothing: antialiased; 
+}
+.wrapper-main{
+	width: 970px;
+	position: relative;
+	margin: 0 auto;
+	overflow: visible;
+	z-index: 2;
+}
+.wrapper-main.z1{
+	z-index: 1!important;
+}
+#main{
+	position: relative;
+}
+#load-testimony{
+	background: url(../img/bx_loader.gif) no-repeat;
+	position: absolute;
+	margin: 0 auto 0 -16px;
+	top: 222px;
+	width: 32px;
+	height: 32px;
+	left: 63%;
+	z-index: 20;
+}
+
+.intro-ucuuba {
+	margin: -370px 0 0;
+	background: url(../img/bghomeblock.jpg) center 0px;
+}
+
+.clear{clear: both;}
+body{
+	/*min-width: 971px;*/
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: @tabletSizePort){
+	.wrapper-main{
+		width: inherit;
+	}
+}

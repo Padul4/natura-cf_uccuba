@@ -1,0 +1,255 @@
+#container-curiosities{
+	margin: 52px auto 0;
+	background: url('../img/bgk1.png') no-repeat top center;
+	height: 610px;
+	#curiosities{
+		margin: 0 auto;
+		width: 100%; 
+		background: url('../img/bgslider.png') no-repeat center 98px; 
+		height: 631px;
+	}
+	.title-curiosities{
+		font-size: 30px;
+		line-height: 40px;
+		color: #f04d38;
+		font-family: 'gill_sans_light', arial, sans-serif;
+		text-align: center;
+		letter-spacing: 0;
+		.strong{    
+			font-family: gill_sans_bold,arial,sans-serif;  
+			font-weight:700;
+			letter-spacing: 1px;
+		}
+	}
+	.subtitle-curiosities{
+		font-family: 'gill_sans_light', arial, sans-serif;
+		text-align: center;
+		font-size: 18px;
+		color: #f04d38;
+		line-height: 18px;
+	}
+	#curiosities-carousel{
+		margin: 40px auto 0; 
+		width: 935px;
+		height: 413px;
+		.slide-item{
+			width: 935px;
+			height: 413px;
+			margin: 0 auto;
+			color: #fffffe;
+			.item-0, .item-1, .item-2, .item-3{
+				/*margin: 40px 0px 0px 97px;*/
+				margin: 0 0px 0px 97px;
+			}
+			.item-0{
+				width: 410px;
+			}
+			.item-1{
+				width: 370px;
+			}
+			.item-2{
+				width: 376px;
+			}
+			.item-3{
+				width: 403px;
+			}
+			.curiosities-carousel-title{
+				font-size: 24px;
+				line-height: 26px;
+				font-family: 'gill_sans', arial, sans-serif;
+				margin-bottom: 16px;
+				letter-spacing: 0;
+				word-spacing: 5px;
+			}
+			.curiosities-carousel-text{
+				font-family: 'gill_sans_light', arial, sans-serif;
+				font-size: 18px;
+				line-height: 24px;
+				letter-spacing: 0;
+				word-spacing: 0;
+			}
+			.curiosities-carousel-text-block{
+				float: left;
+				height: 340px;
+				position: relative;
+				.bottom-line{
+					position: absolute; 
+					z-index: 10;
+					width: 492px;
+					height: 5px;
+					background: url('../img/spriteb.png') transparent no-repeat 0 -1021px;
+					bottom: -4px;
+				}
+				.container-table{
+					display: table;
+					&.small-one{
+						margin-top: 63px;
+						height: 273px;
+					}
+					&.big-one{
+						margin-top: 21px;
+						height: 319px;
+					}
+					.container-cell{
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+			}
+			.curiosities-carousel-image-block{
+				float: right;
+				width: 323px;
+				height: 297px;
+				margin: 74px 89px 0 0;
+				position: relative;
+				z-index: 11;
+			}
+		}
+	}
+}
+
+@media (max-width: @tabletSizePort) {
+	#container-curiosities{
+		height: auto;
+		margin: 0 auto;
+		background-color: #ffdb96;
+		#curiosities{
+			margin: 0 auto;
+			width: 100%; 
+			background: url('../img/bgslider-mobile.png') no-repeat center 133px; 
+			height: auto;
+		}
+		.title-curiosities{
+			.strong{    
+			}
+		}
+		.subtitle-curiosities{
+		}
+		#curiosities-carousel{
+			.bx-viewport{
+				height: 505px;
+			}
+			width: inherit;
+			height: 658px;
+			.slide-item{
+				width: inherit;
+				height: auto;
+				/*margin-top: -20px;*/
+				.item-0, .item-1, .item-2, .item-3{
+					width: auto;
+					padding: 0 5%;
+					br{
+						display: none;
+					}
+				}
+				.item-0{
+				}
+				.item-1{
+				}
+				.item-2{
+				}
+				.item-3{
+				}
+				.curiosities-carousel-title{
+				}
+				.curiosities-carousel-text{
+					width: 100%;
+				}
+				.curiosities-carousel-text-block{
+					text-align: center;
+					margin: 0 auto;
+					float: none;
+					height: auto;
+					.bottom-line{
+						display: none;
+					}
+					.container-table{
+						margin: 0;
+						&.small-one{
+							margin: 0;
+							height: auto;
+						}
+						&.big-one{
+							margin: 0;
+							height: auto;
+						}
+						.container-cell{
+							margin: 0;
+						}
+					}
+				}
+				.curiosities-carousel-image-block{
+					float: none;
+					margin: 0 auto;
+					width: 40%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: ((@mbSizePort) + 60)) {
+	#container-curiosities{
+		.bx-wrapper{
+			margin-top: -20px;
+		}
+		.bx-viewport{
+			height: 660px;
+		}
+		#curiosities{
+			background: url(../img/bgslider-mobile.png) center 145px no-repeat;
+		}
+		.title-curiosities{
+			margin-bottom: 0;
+			margin-top: 0;
+			.strong{    
+			}
+		}
+		.subtitle-curiosities{
+			margin: 0;
+			padding: 0 5%;
+		}
+		#curiosities-carousel{
+			height: 510px;
+			.slide-item{
+				.item-0, .item-1, .item-2, .item-3{
+					br{
+						display: none;
+					}
+				}
+				.item-0{
+				}
+				.item-1{
+				}
+				.item-2{
+				}
+				.item-3{
+				}
+				.curiosities-carousel-title{
+					font-size: 18px;
+					line-height: 20px;
+				}
+				.curiosities-carousel-text{
+					font-size: 15px;
+					line-height: 19px;
+				}
+				.curiosities-carousel-text-block{
+					margin-top: -17px;
+					.bottom-line{
+					}
+					.container-table{
+						&.small-one{
+						}
+						&.big-one{
+						}
+						.container-cell{
+						}
+					}
+				}
+				.curiosities-carousel-image-block{
+				}
+			}
+		}
+	}
+}

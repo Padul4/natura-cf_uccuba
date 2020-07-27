@@ -1,0 +1,160 @@
+#banner-container{
+	height: 146px;
+	width: 100%;
+	background: url(../img/banner.jpg) transparent repeat-x center center;
+	#banner-content{
+		height: 146px;
+		width: 700px;
+		margin: 0 auto;
+		h3, h5{
+			position: relative;
+			color: #fff;
+			letter-spacing: -1px;
+			word-spacing: -1px;
+			font-weight: normal;
+			br{
+				display: none;
+			}
+		}
+		h3{
+			text-indent: 8px;
+			top: 48px;
+			font-size: 28px;
+			font-family: 'gill_sans_light', arial, sans-serif;
+			letter-spacing: 0px;
+			word-spacing: 4px;
+			strong{
+				font-weight: bold;
+				font-family: 'gill_sans_std_bold',arial, sans-serif;
+				letter-spacing: 1px;
+			}
+		}
+		h5{
+			font-size: 18px;
+			text-align: right;
+			top: 54px;
+			width: 520px;
+			font-family: 'gill_sans', arial, sans-serif;
+			word-spacing: 0;
+			letter-spacing: 0;
+		}
+		.social-icons-holder{
+
+		}
+		.social-icon{
+			float: right;
+			position: relative;
+			top: -22px;
+		}
+		.social-icon.spritetwitterred{
+			margin: 0 8px 0 0;
+		}
+
+		.social-icon.spritefacered{
+			margin: 0 27px 0 0;
+		}
+	}
+}
+
+@media (max-width: @tabletSizePort) {
+	#banner-container{
+		height: auto;
+		width: 100%;
+		background: url(../img/banner.jpg) center center repeat-y-x;
+		#banner-content{
+			height: inherit;
+			width: inherit;
+			padding-bottom: 20px;
+			h3, h5{
+				text-align: center;
+				br{
+					display: block;
+				}
+			}
+			h3{
+				font-size: 35px;
+				strong{
+				}
+			}
+			h5{
+				font-size: 25px;
+				width: inherit;
+			}
+			.social-icons-holder{
+				text-align: center;
+				margin-top: 80px;
+				margin-bottom: 0;
+			}
+			.social-icon{
+				float: none;
+				top: 0;
+				display: inline-block;
+				margin: 0 auto;
+
+			}
+			.social-icon.spritetwitterred{
+			}
+			.social-icon.spritefacered{
+			}
+		}
+	}
+}
+
+
+@media (max-width: @mbSizeLand) {
+	#banner-container{
+		#banner-content{
+			h3, h5{
+				br{
+					display: block;
+				}
+			}
+			h3{
+				strong{
+				}
+			}
+			h5{
+				top: 25px;
+			}
+			.social-icons-holder{
+			}
+			.social-icon{
+			}
+			.social-icon.spritetwitterred{
+			}
+			.social-icon.spritefacered{
+			}
+		}
+	}
+}
+
+
+@media (max-width: ((@mbSizePort) + 60)) {
+	#banner-container{
+		#banner-content{
+			width: auto;
+			h3, h5{
+				padding: 0 5%;
+				br{
+					display: none;
+				}
+			}
+			h3{
+				font-size: 27px;
+				strong{
+				}
+			}
+			h5{
+				font-size: 17px;
+			}
+			.social-icons-holder{
+			}
+			.social-icon{
+			}
+			.social-icon.spritetwitterred{
+			}
+			.social-icon.spritefacered{
+			}
+		}
+	}
+}

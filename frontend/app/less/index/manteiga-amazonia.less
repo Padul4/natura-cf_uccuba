@@ -1,0 +1,149 @@
+#amazon-butter {
+	width: 100%;
+	height: 650px;
+	background:url('../img/background-manteiga.jpg') repeat-x top center;
+	position: relative;
+	overflow-x: hidden;
+	.container{
+		width: 971px;
+		margin: 0 auto;
+		position: relative;
+		.block-a, .block-b{
+			float: left;
+			margin-top: 139px;
+		}
+		.block-a{
+			.title-butter, .text-amazon-butter, .separator{
+				margin: 0 0 0 98px;
+				position: relative;
+				z-index: 10;
+			}
+			.title-butter{
+				color: #FFF;
+				font-family: 'gill_sans_light', arial, sans-serif; 
+				font-size: 35px; 
+				line-height: 42px; 
+				letter-spacing: -1px; 
+				word-spacing: -1px;
+				.strong{
+					font-family: 'gill_sans_std_bold',arial, sans-serif;
+					word-spacing: 4px; 
+					letter-spacing: 0px; 
+				}
+			}
+			.separator{
+				height: 2px;
+				width: 455px; 
+				background-color: #FFF;
+				margin: 11px 0 23px 98px;
+			}
+			.text-amazon-butter{
+				color: #FFF;
+				font-size: 14px;
+				font-family: 'gill_sans_light', arial, sans-serif; 
+				font-size: 22px;
+				line-height: 27px;
+			}
+		}
+		.block-b{
+			position: absolute;
+			z-index: 12;
+			right: -144px;
+			top: -33px;
+			.butter-image{
+				background: url('../img/fruto-ucuuba.png') no-repeat top center;
+				width: 582px;
+				height: 463px;
+			}
+		}
+		.block-b-mobile{
+			display: none;
+		}
+	}
+}
+
+@media (max-width: @tabletSizePort) {
+	#amazon-butter {
+		height: auto;
+		.container{
+			width: inherit;
+			margin: 0;
+			.block-a, .block-b{
+				margin-top: 100px;
+			}
+			.block-a{
+				float: none;
+				margin-top: 55px;
+				.title-butter, .text-amazon-butter, .separator{
+					margin: 0;
+				}
+				.title-butter{
+					text-align: center;
+					margin: 0;
+					.strong{
+					}
+				}
+				.separator{
+					display: none;
+				}
+				.text-amazon-butter{
+					text-align: center;
+					font-size: 26px;
+					line-height: 33px;
+				}
+			}
+			.block-b{
+				.butter-image{
+					display: none;
+				}
+			}
+			.block-b-mobile{
+				display: block;
+				text-align: center;
+				max-width: 60%;
+				margin: 0 auto;
+				.fruto-ucuuba-mobile{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: ((@mbSizePort) + 60)) {
+	#amazon-butter {
+		.container{
+			.block-a, .block-b{
+			}
+			.block-a{
+				.title-butter, .text-amazon-butter, .separator{
+				}
+				.title-butter{
+					font-size: 27px;
+					padding: 0 5%;
+					.strong{
+					}
+				}
+				.separator{
+				}
+				.text-amazon-butter{
+					font-size: 16px;
+					line-height: 22px;
+					padding: 0 5%;
+					br{
+						display: none;
+					}
+				}
+			}
+			.block-b{
+				.butter-image{
+				}
+			}
+			.block-b-mobile{
+				.fruto-ucuuba-mobile{
+				}
+			}
+		}
+	}
+}

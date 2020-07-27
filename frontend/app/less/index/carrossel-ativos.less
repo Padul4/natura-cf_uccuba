@@ -1,0 +1,143 @@
+.container-ekos-ativos{
+	margin: 0 auto;
+	width: 940px;
+	.title-ekos-ativos{
+		text-transform: uppercase;
+		font-size: 30px;
+	  color: #f04d38;
+	  font-family: gill_sans_light,arial,sans-serif;
+	  text-align: center;
+	  letter-spacing: 0;
+		strong{
+			font-family: gill_sans_bold,arial,sans-serif;
+		}
+		br{
+			display: none;
+		}
+	}
+	.ContentFlow{
+		height: 415px;
+		.nav-arrow{
+			background: url(../img/arrows.png);
+			display: block;
+			cursor: pointer;
+			position: absolute;
+		}
+		.nav-arrow.previous{
+			width: 80px;
+			height: 80px;
+			top: 150px;
+			left: 110px;
+		}
+		.nav-arrow.next{
+			background-position: -84px;
+			width: 80px;
+			height: 80px;
+			top: 150px;
+			right: 110px;
+		}
+		.flow{
+			.item{
+				.blur-img{
+					display: none;
+				}
+				&.active{
+					.blur-img{
+						position: absolute;
+						z-index: -1;
+						top: -43px;
+						left: -120px;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+.ContentFlow::selection{
+  background: transparent; /* WebKit/Blink Browsers */
+}
+.ContentFlow::-moz-selection{
+  background: transparent; /* WebKit/Blink Browsers */
+}
+#amazon-butter::selection{
+  background: transparent; /* WebKit/Blink Browsers */
+}
+#amazon-butter::-moz-selection{
+  background: transparent; /* WebKit/Blink Browsers */
+}
+
+@media (max-width: @tabletSizePort) {
+	.container-ekos-ativos{
+		margin-top: 50px;
+		width: inherit;
+		.title-ekos-ativos{
+			br{
+				display: block;
+			}
+			strong{
+			}
+		}
+		.ContentFlow{
+			.nav-arrow{
+			}
+			.nav-arrow.previous{
+			}
+			.nav-arrow.next{
+			}
+			.flow{
+				.item{
+					.blur-img{
+					}
+					&.active{
+						.blur-img{
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: ((@mbSizePort) + 60)) {
+	.container-ekos-ativos{
+		.ContentFlow{
+			height: 270px!important;
+		}
+		/*.scale(0.7);*/
+		.title-ekos-ativos{
+			strong{
+			}
+		}
+		.ContentFlow{
+			height: 100px;
+			.flow{
+			}
+			.nav-arrow{
+			}
+			.nav-arrow.previous{
+				.scale(0.7);
+				top: 130px;
+				left: 5px;
+			}
+			.nav-arrow.next{
+				.scale(0.7);
+				top: 130px;
+				right: 5px;
+			}
+			.flow{
+				.item{
+					.blur-img{
+						display: none;
+					}
+					&.active{
+						.blur-img{
+						display: none;
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}

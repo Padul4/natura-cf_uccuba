@@ -1,0 +1,11 @@
+<script type="text/javascript">
+$(document).ready(function($) {
+  if ($(window).width() <= 799 || window.screen.width <= 799) {
+    var qs = window.location.toString().split('?'),
+        dataUrl = typeof qs[1] !== "undefined" ? ('?' + qs[1]) : '';
+
+    console.log('url: ' + PersistData.mbUrl + dataUrl);
+    window.location = PersistData.mbUrl + dataUrl;
+  }
+});
+</script>

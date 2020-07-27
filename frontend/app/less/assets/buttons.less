@@ -1,0 +1,109 @@
+/**
+ Mixin que seta um botao
+*/
+.setBtn(@color, @txtcolor:#ffffff, @w:auto, @h:auto, @fontFamily: @mainFontLight ) {
+	display: inline-block;
+	text-align: center;
+	.size(@w, @h);
+	.btn-link {
+		display: block; 
+		text-transform: uppercase;
+		padding: 7px 12px;
+		font-size: 16px;
+		background-color: @color;
+		color: @txtcolor;
+		font-family: @fontFamily;
+		text-decoration: none;
+		.border-radius(5px);
+		.transition(all 350ms linear);
+		&:hover {
+			background-color: darken(@color, 15%);
+		};
+		&:before {
+			content: "";
+			margin-right: 5px;
+			.setIconArrowRight(5px, @txtcolor);
+		}
+	}
+	&.double-line {
+		.btn-link {
+			position: relative;
+			padding: 12px 30px 12px 35px;
+			line-height: 19px;
+			&:before {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				left: 20px;
+			}
+		}
+	}
+}
+.btn{
+	line-height: 34px;
+	width: 150px;
+	text-align: center;
+	/*height: 34px;*/
+	height: 36px;
+	font-size: 14px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius:    30px;
+	border-radius:         30px;
+	/*border: 1px solid #f24b38;
+	border: 1px solid #f04d38;*/
+	text-decoration: none;
+	display: inline-block;
+	/*font-family: 'gill_sans_bold', arial, sans-serif;*/
+	font-family: 'gill_sans_std_bold', arial, sans-serif;
+	font-weight: bold;
+	color: #f04d38;
+	margin-bottom: 10px;
+	background: url('../img/spriteb.png') transparent no-repeat -3px -1121px;
+}
+
+.btn-b{
+	width: 200px;
+	background: url('../img/spriteb.png') transparent no-repeat -211px -1162px;
+}
+.btn-b:hover{
+	background: url('../img/spriteb.png') transparent no-repeat -3px -1162px !important;
+}
+.btn-type-a{
+	height: 52px;
+	-webkit-border-radius: 26px;
+	-moz-border-radius: 26px;
+	border-radius: 26px;
+	background-color: #f04d38;
+	text-align: center;
+	color: #FFF;
+	font-size: 18px;
+	line-height: 52px;
+	letter-spacing: 0;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 18px;
+	font-family: 'gill_sans_std_bold', arial, sans-serif;
+	text-shadow: -1px 2px 1px rgba(87, 28, 20, 0.26);
+}
+
+.btn-saibamais-manteiga-ucuuba a{
+/*	display: block;
+	width: 371px;
+	margin: 0 auto;
+	/*font-family: 'gill_sans', arial, sans-serif;*/
+/*	font-family: 'gill_sans_bold', arial, sans-serif;
+	line-height: 49px;
+	text-indent: -99999px;
+	background: url(../img/spriteb.png) -6px -1221px no-repeat;*/
+}
+
+.btn-confirmar{
+	width: 171px;
+	display: block;
+	margin-top: 15px;
+}
+
+.back-to-home{
+	width: 351px;
+}

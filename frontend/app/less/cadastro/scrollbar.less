@@ -1,0 +1,66 @@
+/* Tiny Scrollbar */
+.modal-regulamento {
+    width: 520px;
+    margin: 20px 0 10px;
+    height: 460px;
+}
+.modal-regulamento .viewport {
+    width: 500px;
+    height: 450px;
+    /*height: 570px;*/
+    overflow: hidden;
+    position: relative;
+}
+.modal-regulamento .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+.modal-regulamento .scrollbar {
+    background-position: 0 0;
+    width: 21px;
+    position: absolute;
+    right: 40px;
+    /*top: 130px;*/
+    top: 46px;
+}
+.modal-regulamento .track {
+    background:#fff;
+    height: 100%;
+    width: 11px;
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.modal-regulamento .thumb {
+    background: transparent url(../img/sprite.png) no-repeat -140px -960px;
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.modal-regulamento .thumb .end {
+    background: transparent url(../img/sprite.png) no-repeat -140px -960px;
+    overflow: hidden;
+    height: 21px;
+    width: 21px;
+}
+.modal-regulamento .disable {
+    display: none;
+}
+.noSelect {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
